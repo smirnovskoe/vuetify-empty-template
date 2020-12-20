@@ -1,7 +1,7 @@
 <template>
     <nav>
         <v-app-bar app>
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon @click="$emit('click')"></v-app-bar-nav-icon>
 
             <v-toolbar-title class="text-uppercase grey--text">
                 <span>Vuetify template</span>
@@ -10,21 +10,16 @@
             <v-btn>
                 <span>Sign Out</span>
             </v-btn>
-        </v-app-bar>
-
-        <Sidebar />
-
-
-        
+        </v-app-bar>      
     </nav>
 </template>
 
 <script>
-import Sidebar from '@/components/app/Sidebar';
 
 export default {
+    name: 'navbar',
     components: {
-        Sidebar,
+
     }
     
 }

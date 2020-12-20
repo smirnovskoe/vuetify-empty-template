@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer app v-model="value">
     <v-list>
         <v-list-item
           v-for="item in links"
@@ -21,6 +21,8 @@
 
 <script>
 export default {
+    name: 'sidebar',
+    props: ['value'],
     data: () => ({
         drawer: true,
         links: [
