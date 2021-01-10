@@ -7,20 +7,21 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    meta: {layout: 'main'},
+    meta: { layout: 'main' },
     component: () => import('../views/Home.vue')
   },
-  {
-    path: '/about',
-    name: 'about',
-    meta: {layout: 'empty'},
-    component: () => import('../views/About.vue')
-  },
+
   {
     path: '/help',
     name: 'help',
-    meta: {layout: 'main'},
+    meta: { layout: 'main' },
     component: () => import('../views/Help.vue')
+  },
+  {
+    path: '/physical',
+    name: 'physical',
+    meta: { layout: 'main' },
+    component: () => import('../views/Physical.vue')
   },
 ]
 
